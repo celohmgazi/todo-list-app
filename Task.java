@@ -18,5 +18,12 @@ public class Task {
     public String getCategory() {
         return category;
     }
+    public void markAsCompleted() {
+        isCompleted = true;
+    }
+    @Override
+    public String toString() {
+        return (isCompleted ? "[X] " :  "[ ] " + description) + " (Category: " + category + ")";
+    }
 }
 
