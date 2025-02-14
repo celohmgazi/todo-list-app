@@ -3,9 +3,9 @@ public class Task {
     private  boolean isCompleted;
     private String category;
 
-    public Task(String description, boolean isCompleted, String category) {
+    public Task(String description, String category) {
         this.description = description;
-        this.isCompleted = isCompleted;
+        this.isCompleted = false;
         this.category = category;
     }
 
