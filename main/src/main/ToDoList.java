@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 
 public class ToDoList {
@@ -20,6 +22,9 @@ public class ToDoList {
         } else {
             System.out.println("No task found");
         }
+    }
+    public ArrayList<Task> getTasks() {
+        return tasks;
     }
 
     public void displayTasks() {
